@@ -35,4 +35,7 @@ in
 
   arm64 = filter.crossTargetList pkgsCross.aarch64-multiplatform-musl ocamlVersion;
 
+  # XXX
+  iphone64 = filter.crossTargetList pkgsCross.iphone64 ocamlVersion;
+
 }."${target}"
