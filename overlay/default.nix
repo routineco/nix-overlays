@@ -43,6 +43,10 @@ in
       aarch64-multiplatform =
         super.pkgsCross.aarch64-multiplatform.extend cross-overlay;
 
+      # XXX
+      iphone64 =
+        super.pkgsCross.iphone64.extend cross-overlay;
+
       aarch64-multiplatform-musl =
         (super.pkgsCross.aarch64-multiplatform-musl.appendOverlays
           [ cross-overlay static-overlay ]);
