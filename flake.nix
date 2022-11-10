@@ -57,7 +57,7 @@
         pkgs.appendOverlays extraOverlays;
 
       overlays.default = import ./overlay nixpkgs;
-    } // flake-utils.lib.eachSystem ["iphone64"] (system:
+    } // flake-utils.lib.eachSystem ["aarch64-apple-ios"] (system:
       {
         legacyPackages = self.makePkgs { inherit system; };
 

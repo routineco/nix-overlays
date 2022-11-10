@@ -44,7 +44,7 @@ in
         super.pkgsCross.aarch64-multiplatform.extend cross-overlay;
 
       # XXX
-      iphone64 =
+      aarch64-apple-ios =
         super.pkgsCross.iphone64.extend cross-overlay;
 
       aarch64-multiplatform-musl =
